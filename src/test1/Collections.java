@@ -27,6 +27,10 @@ public class Collections {
             System.out.println(liste);
         }
         
+        for(String s:liste){
+            System.out.println(s);
+        }
+        
         liste.remove(2);
         
         System.out.println(liste + "" +liste.size());
