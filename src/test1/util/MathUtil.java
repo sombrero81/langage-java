@@ -9,7 +9,7 @@ import java.io.IOException;
 
 
 /**
- *comment
+ *commentno comment
  * @author admin
  */
 public class MathUtil {
