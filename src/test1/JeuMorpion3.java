@@ -16,7 +16,7 @@ import test1.util.MathUtil;
  */
 public class JeuMorpion3 {
 
-    //affichage de tableau 2x2 avec 2 boucles inbriqué
+    //affichage de tableau 3x3 avec 2 boucles inbriqué
     public static void affiche(char[][] p) {
 
         for (char[] ligneAct : p) {
