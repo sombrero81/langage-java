@@ -14,6 +14,9 @@ import java.io.IOException;
  */
 public class MathUtil {
     
+    
+    
+    
     public static int factorielleRecursive(int nombre){
         if (nombre<0){
            throw new RuntimeException("erreur mathematique!");
