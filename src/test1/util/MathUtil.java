@@ -7,8 +7,9 @@ package test1.util;
 
 import java.io.IOException;
 
+
 /**
- *
+ *comment
  * @author admin
  */
 public class MathUtil {
