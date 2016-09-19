@@ -11,35 +11,23 @@ package test1.classes;
  */
 public class Gateau {
 
-    @Override
-    public String toString() {
-        
-        return var+ " "+forme +" *** "+ gout+" ***"+couleur; //ce qui renvoi un objet vers string
-    }
+    private static String forme = "etoile";
+    private String gout;
+    private String couleur;
+    private static int var = 0;
 
     public Gateau(String gout, String couleur) { //constructeur
         this.gout = gout;
         this.couleur = couleur;
-        var=var+1;
+        var = var + 1;
     }
 
-    
-    
     public Gateau() { //constructeur
-        
-        this.couleur="noir";
-        this.gout="chocolat";
-        var=var+1;
-        
-        
-    }
 
-    
-    
-    private static String forme="etoile";
-    private String gout;
-    private String couleur;
-    private static int var=0;
+        this.couleur = "noir";
+        this.gout = "chocolat";
+        var = var + 1;
+    }
 
     public static int getVar() {
         return var;
@@ -48,10 +36,6 @@ public class Gateau {
     public static void setVar(int var) {
         Gateau.var = var;
     }
-    
-    
-    
-    
 
     public static String getForme() {
         return forme;
@@ -76,7 +60,10 @@ public class Gateau {
     public void setCouleur(String couleur) {
         this.couleur = couleur;
     }
-    
-    
 
+    @Override
+    public String toString() {
+
+        return var + " " + forme + " *** " + gout + " ***" + couleur; //ce qui renvoi un objet vers string
+    }
 }

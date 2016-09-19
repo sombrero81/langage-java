@@ -12,11 +12,29 @@ package test1.classes;
 public class Film {
     
     
-    static public String titre;
+    private String titre;
     private String synopsis;
     private Integer dureeEnMinutes;
     private Integer annee;
+    private static int nbfilm = 0;
 
+    public Film(String titre, String synopsis, Integer dureeEnMinutes, Integer annee) {
+        this.titre = titre;
+        this.synopsis = synopsis;
+        this.dureeEnMinutes = dureeEnMinutes;
+        this.annee = annee;
+        nbfilm++;
+    }
+
+    public Film() {
+        this("","",0,0);
+    }
+
+    public static int getNbfilm() {
+        return nbfilm;
+    }
+
+    
     
     public String getTitre() {
         return titre;
@@ -49,6 +67,13 @@ public class Film {
     public void setAnnee(Integer annee) {
         this.annee = annee;
     }
+
+    @Override
+    public String toString() {
+        return titre+" "+synopsis+" "+annee+" "+dureeEnMinutes; //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    
     
     
 }
