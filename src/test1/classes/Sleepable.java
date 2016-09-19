@@ -9,12 +9,11 @@ package test1.classes;
  *
  * @author admin
  */
-abstract public class Animal implements Sleepable{
-    
-    public String nom="nom de lanimal";
-    
-    abstract public void manger();
-    abstract public void bouger();
+public interface Sleepable {
     
     
+    public void sleep();
+    
+    
+            
 }

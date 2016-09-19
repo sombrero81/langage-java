@@ -24,6 +24,12 @@ public class Poisson extends Animal{
     public void bouger() {
         System.out.println("je nage");
     }
+
+    @Override
+    public void sleep() {
+        System.out.println("je nage");
+        
+    }
     
 
             

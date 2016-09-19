@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 import test1.classes.Animal;
 import test1.classes.Poisson;
 import test1.classes.Serpent;
+import test1.classes.Sleepable;
 import test1.classes.Tortue;
 
 /**
@@ -20,6 +21,13 @@ import test1.classes.Tortue;
 public class AnimalTest {
     
     @Test
+    public void sleepableTest(){
+        Sleepable s=new Poisson();
+    }
+    
+    
+    
+    @Test
     public void test(){
         
         
@@ -27,6 +35,8 @@ public class AnimalTest {
        // Poisson p = new Poisson();
 //        p.bouger();
 //        p.manger();
+
+//creer liste des 3 animaux
         ArrayList<Animal> ListeAnimaux = new ArrayList<>();
   
         Poisson p = new Poisson();
@@ -38,9 +48,13 @@ public class AnimalTest {
         Tortue t = new Tortue();
         ListeAnimaux.add(t);
         
+        
+        //iterer sur la liste et fait bouger et manger à chacun
         for (Animal animal : ListeAnimaux) {
-            System.out.println(animal.nom);
+            //System.out.println(animal.nom);
             
+            
+            System.out.println(animal.getClass().getSimpleName());
             animal.manger();
             animal.bouger();
         }
