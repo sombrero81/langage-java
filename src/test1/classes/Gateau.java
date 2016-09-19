@@ -18,7 +18,7 @@ public class Gateau {
 
     
     
-    private static String forme;
+    private static String forme="etoile";
     private String gout;
 
     public static String getForme() {
