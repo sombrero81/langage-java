@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test1.clases;
+package test1.classes;
 
 /**
  *
  * @author admin
  */
-public class Genre {
+public class Acteur {
     
     private String nom;
+    private String prenom;
 
     public String getNom() {
         return nom;
@@ -19,6 +20,14 @@ public class Genre {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
     
 }

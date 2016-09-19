@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package test1.clases;
+package test1.classes;
 
 /**
  *
@@ -12,7 +12,7 @@ package test1.clases;
 public class Film {
     
     
-    private String titre;
+    static public String titre;
     private String synopsis;
     private Integer dureeEnMinutes;
     private Integer annee;
